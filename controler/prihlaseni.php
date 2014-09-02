@@ -10,7 +10,7 @@ $salt = "#$%^&*@#$%^&*";
 
 require '../database/model.php';
 $model = new Model();
-$row = $model -> login($mail, sha1($pass . $salt));
+$row = $model ->login($mail, sha1($pass . $salt));
 
 $view = new View();
 if ($row !== NULL) {

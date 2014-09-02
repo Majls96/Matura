@@ -112,6 +112,16 @@ body{
     border-bottom: solid 2px;
     border-bottom-color: #666666;
 }
+.navigation a:visited{
+    color: white
+}
+.navigation a:active{
+    color: white;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+}
 .navigation table tr td{
     padding: 0px;
     position: relative;
@@ -208,7 +218,7 @@ body{
     border: 0;
     line-height: 2em;
     outline: 0;
-    text-indent: 10px;
+    text-indent: 10 px;
     border-radius: 3px;
 }
 .regist{

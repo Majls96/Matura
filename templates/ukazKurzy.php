@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
 <html>
     <head>
         <title></title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <script type="text/javascript" src="js/jquery-1.6.3.min.js"></script>
-        <script type="text/javascript" src="js/navigation.js"></script>
-        <script type="text/javascript" src="js/profile.js"></script>
+        <link rel="stylesheet" type="text/css" href="../style.css"/>
+        <script type="text/javascript" src="../js/jquery-1.6.3.min.js"></script>
+        <script type="text/javascript" src="../js/navigation.js"></script>
+        <script type="text/javascript" src="../js/profile.js"></script>
 
 
     </head>
@@ -16,13 +15,13 @@
 
         <div class="container">
             <div class="nav">
-                <div class="logo"><a><img src="image/Mywaylogo.png"/></a></div>
+                <div class="logo"><a><img src="../image/Mywaylogo.png"/></a></div>
                 <div class="navigation">
                     <table>
                         <tr align="center">
-                            <td id="home">HOME</td>
+                            <td id="home"><a href="../index.php">HOME</a></td>
                             <td id="profile">PROFILE</td>
-                            <td id="course"><a href="controler/Courses.php">COURSE</a></td>
+                            <td id="course">COURSE</td>
                             <td id="contact">CONTACT</td>
                             <td id="cart">CART</td>
                         </tr>
@@ -31,10 +30,10 @@
             </div>
             <div class="contentnav">
                 <div class="slideshow">
-                    <img class="jedna"src="image/nikelogo.jpg"/>
+                    <img class="jedna"src="../image/nikelogo.jpg"/>
 
-                    <img src="image/usain.jpg"/>
-                    <img src="image/adida.jpg"/>
+                    <img src="../image/usain.jpg"/>
+                    <img src="../image/adida.jpg"/>
                 </div>
                 <div class="profile">
                     <div class="regist">
@@ -90,13 +89,17 @@
                             <td>ACCESSORIES</td>
                             </tr>
                     </table>
-                    <img class="slidedown" src="image/1.png"/>
+                    <img class="slidedown" src="../image/1.png"/>
                 </div>
             </div>
             <div class="content">
 
                 <div class="incontent">
                     <?php
+                    foreach ($result as $row){
+                        //$name = $row["Nazev"];
+                        echo '<div> Nazev: ' . $row . ', </div>';
+                    }
                     ?>
 
                 </div>
